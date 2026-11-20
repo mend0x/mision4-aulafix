@@ -1,0 +1,526 @@
+
+/* ==========================================
+   AULAFIX - ESTILO 2010
+   Inspirado en Windows 7 / Aero
+   ========================================== */
+
+/* ESTILOS GENERALES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 35px 15px;
+    min-height: 100vh;
+
+    font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+    font-size: 14px;
+    color: #263c50;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.15) 25%,
+            transparent 25%
+        ),
+        linear-gradient(
+            180deg,
+            #74afd4 0%,
+            #b5d9ee 45%,
+            #e4f0f8 100%
+        );
+
+    background-attachment: fixed;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+#root {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+main {
+    overflow: hidden;
+
+    background: #eef4f9;
+
+    border: 1px solid #46799e;
+    border-radius: 11px;
+
+    box-shadow:
+        0 0 0 4px rgba(255,255,255,0.35),
+        0 10px 35px rgba(12,49,80,0.35),
+        inset 0 1px 0 #ffffff;
+}
+
+/* BARRA SUPERIOR TIPO WINDOWS 7 */
+
+main::before {
+    content: "AULAFIX  |  SISTEMA DE INCIDENCIAS";
+
+    display: block;
+    padding: 11px 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+
+    background: linear-gradient(
+        180deg,
+        #7cbbe5 0%,
+        #3989bc 45%,
+        #176092 50%,
+        #286e9d 100%
+    );
+
+    border-bottom: 1px solid #164a70;
+
+    text-shadow: 0 1px 2px #174a6b;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.65),
+        inset 0 -1px 0 rgba(0,0,0,0.15);
+}
+
+/* CABECERA */
+
+main > h1 {
+    margin: 0;
+    padding: 32px 30px 4px;
+
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -1px;
+
+    color: #174f79;
+
+    text-shadow:
+        0 1px 0 #ffffff,
+        0 2px 3px rgba(0,0,0,0.12);
+}
+
+main > p {
+    margin: 0;
+    padding: 0 30px 25px;
+
+    font-size: 14px;
+    color: #65849b;
+}
+
+/* PANELES */
+
+main > section {
+    margin: 0 25px 25px;
+    padding: 25px;
+
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f4f8fc 100%
+    );
+
+    border: 1px solid #b5cddd;
+    border-radius: 7px;
+
+    box-shadow:
+        0 2px 6px rgba(30,74,109,0.10),
+        inset 0 1px 0 #ffffff;
+}
+
+/* TÍTULOS DE SECCIÓN */
+
+h2 {
+    margin: 0 0 22px;
+    padding: 0 0 12px;
+
+    font-size: 21px;
+    font-weight: bold;
+
+    color: #24618c;
+
+    border-bottom: 1px solid #cfdfeb;
+
+    text-shadow: 0 1px 0 white;
+}
+
+/* FORMULARIO */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+/* ETIQUETAS */
+
+label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #315a79;
+
+    text-shadow: 0 1px 0 white;
+}
+
+/* CAMPOS */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px 13px;
+
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 14px;
+
+    color: #263e52;
+
+    background: linear-gradient(
+        180deg,
+        #edf3f8 0%,
+        #ffffff 15%,
+        #ffffff 100%
+    );
+
+    border: 1px solid #9ab5c9;
+    border-radius: 4px;
+
+    box-shadow:
+        inset 0 1px 3px rgba(0,0,0,0.09),
+        0 1px 0 white;
+
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #91a4b5;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #5e99c3;
+}
+
+/* FOCO AERO */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #2989c9;
+
+    box-shadow:
+        0 0 0 3px rgba(70,166,224,0.22),
+        inset 0 1px 3px rgba(0,0,0,0.06);
+
+    background: #ffffff;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+select {
+    cursor: pointer;
+}
+
+/* CAMPOS INVÁLIDOS */
+
+input[aria-invalid="true"],
+select[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+    border-color: #cb5555;
+
+    background: #fffafa;
+}
+
+/* BOTÓN PRINCIPAL */
+
+button {
+    width: 100%;
+    padding: 13px 20px;
+
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+    color: #ffffff;
+    cursor: pointer;
+
+    border: 1px solid #15547f;
+    border-radius: 5px;
+
+    background: linear-gradient(
+        180deg,
+        #83c7f0 0%,
+        #4aabe2 45%,
+        #2082bf 50%,
+        #246d9f 100%
+    );
+
+    text-shadow: 0 1px 1px #154d75;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.75),
+        inset 0 -1px 0 rgba(0,0,0,0.15),
+        0 2px 4px rgba(0,0,0,0.16);
+
+    transition:
+        background 0.2s,
+        box-shadow 0.2s;
+}
+
+button:hover:not(:disabled) {
+    background: linear-gradient(
+        180deg,
+        #a6deff 0%,
+        #65bdf0 45%,
+        #3099d3 50%,
+        #287aa9 100%
+    );
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.9),
+        0 0 9px rgba(39,153,220,0.5);
+}
+
+button:active:not(:disabled) {
+    background: linear-gradient(
+        180deg,
+        #185f91,
+        #378fc7
+    );
+
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
+}
+
+button:focus-visible {
+    outline: 3px solid #ffca64;
+    outline-offset: 3px;
+}
+
+button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+/* MENSAJES DE ERROR */
+
+[role="alert"] {
+    margin: 5px 0;
+    padding: 10px 13px;
+
+    font-size: 12px;
+    color: #9e2f2f;
+
+    background: linear-gradient(
+        180deg,
+        #fff5f5,
+        #ffe5e5
+    );
+
+    border: 1px solid #e6aaaa;
+    border-radius: 4px;
+
+    box-shadow: inset 0 1px 0 #ffffff;
+}
+
+/* MENSAJE DE ÉXITO */
+
+[role="status"] {
+    margin: 10px 0;
+    padding: 13px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    color: #34642d;
+
+    background: linear-gradient(
+        180deg,
+        #f2ffe8,
+        #d8f1c5
+    );
+
+    border: 1px solid #a8cf91;
+    border-radius: 5px;
+}
+
+/* SEPARADOR ENTRE FORMULARIO Y LISTADO */
+
+hr {
+    height: 1px;
+    margin: 25px;
+    border: none;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #9bbcd2,
+        transparent
+    );
+}
+
+/* LISTADO DE INCIDENCIAS */
+
+section ul {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+
+    padding: 0;
+    margin: 0;
+}
+
+/* TARJETAS DE INCIDENCIAS */
+
+section li {
+    padding: 18px;
+
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #e8f2fa 100%
+    );
+
+    border: 1px solid #b6d0e1;
+    border-radius: 6px;
+
+    box-shadow:
+        inset 0 1px 0 #ffffff,
+        0 2px 5px rgba(29,79,116,0.10);
+
+    overflow-wrap: anywhere;
+}
+
+section li:hover {
+    border-color: #5b9fcd;
+
+    box-shadow:
+        0 0 7px rgba(59,146,204,0.22);
+}
+
+section li p {
+    margin: 0;
+    padding: 6px 0;
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    color: #496479;
+}
+
+/* NÚMERO DE AULA EN LA TARJETA */
+
+section li p:first-child {
+    font-size: 17px;
+    font-weight: bold;
+
+    color: #195c8c;
+
+    border-bottom: 1px solid #d5e4ee;
+
+    padding-bottom: 10px;
+    margin-bottom: 6px;
+}
+
+/* CATEGORÍA */
+
+section li p:nth-child(2) {
+    display: inline-block;
+
+    margin: 7px 0;
+    padding: 5px 10px;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    color: #23618c;
+
+    background: linear-gradient(
+        180deg,
+        #edf7ff,
+        #cce5f6
+    );
+
+    border: 1px solid #9dc6e1;
+    border-radius: 4px;
+}
+
+/* DESCRIPCIÓN */
+
+section li p:last-child {
+    padding-top: 9px;
+    color: #536a7c;
+}
+
+/* PÁRRAFOS DE SECCIÓN */
+
+section > p {
+    line-height: 1.6;
+}
+
+/* DISEÑO RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 15px 8px;
+    }
+
+    main > h1 {
+        font-size: 31px;
+        padding: 25px 18px 5px;
+    }
+
+    main > p {
+        padding: 0 18px 22px;
+    }
+
+    main > section {
+        margin: 0 12px 18px;
+        padding: 18px;
+    }
+
+    main::before {
+        font-size: 10px;
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    section ul {
+        grid-template-columns: 1fr;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+
+    hr {
+        margin: 18px 12px;
+    }
+}
