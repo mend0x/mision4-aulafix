@@ -210,7 +210,7 @@ La asistencia no se limitó a sugerencias: parte del código, especialmente el f
 
 > «Cual es la mejor manera de desarrollar "campoOtro" en schemas.js»
 
-> «Proporciona un css similar al de la mision 3, estilo aero 2010»
+> «Proporciona un css similar al de la mision 3, estilo aero 2010/2011»
 
 > «De que manera puedo usar safeParse para que sea sencillo de explicar»
 
