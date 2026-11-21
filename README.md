@@ -296,12 +296,4 @@ No se incluyen pruebas automatizadas propias en esta versión. Las comprobacione
 - Una incidencia corrupta provoca el rechazo de la respuesta completa del listado.
 - Los datos permanecen en el archivo local `db.json` y no se sincronizan entre dispositivos.
 
-## Entrega
-
-El repositorio incluye los archivos fuente, `package.json`, `package-lock.json`, `db.json` vacío y este README.
-
-No deben subirse `node_modules/`, `dist/` ni archivos temporales.
-
-Para ejecutar el proyecto después de clonarlo basta con instalar las dependencias y arrancar por separado Vite y JSON Server.
-
 **Proyecto académico desarrollado para M4 · Full Contact Forms — Web Development I, U-tad.**
