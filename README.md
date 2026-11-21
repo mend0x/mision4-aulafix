@@ -296,4 +296,4 @@ No se incluyen pruebas automatizadas propias en esta versión. Las comprobacione
 - Una incidencia corrupta provoca el rechazo de la respuesta completa del listado.
 - Los datos permanecen en el archivo local `db.json` y no se sincronizan entre dispositivos.
 
-**Proyecto académico desarrollado para M4 · Full Contact Forms — Web Development I, U-tad.**
+**Proyecto académico desarrollado por Sergio Mendo para M4 · Full Contact Forms — Web Development I, U-tad.**
