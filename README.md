@@ -216,8 +216,6 @@ La asistencia no se limitó a sugerencias: parte del código, especialmente el f
 
 Se mantuvo como criterio utilizar los conceptos explicados en el temario de la asignatura y evitar funcionalidades innecesarias.
 
-La responsabilidad de ejecutar, comprobar, comprender y defender el código corresponde al alumno.
-
 ## Autopsia
 
 ### 1. Utilizar Zod como única fuente de validación
